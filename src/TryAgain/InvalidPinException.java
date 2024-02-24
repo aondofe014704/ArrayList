@@ -1,8 +1,7 @@
-package bankTriers;
+package TryAgain;
+
 public class InvalidPinException extends RuntimeException{
     public InvalidPinException(String response){
-        super("You have entered the Wrong pin");
-
+        super(response);
     }
-
 }

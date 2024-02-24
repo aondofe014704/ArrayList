@@ -1,6 +1,7 @@
-package myBankApp.exceptions;
+package MyBankApplication;
 
 public class InvalidPinException extends RuntimeException{
+
     public InvalidPinException(String message){
         super(message);
     }
