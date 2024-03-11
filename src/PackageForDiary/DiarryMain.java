@@ -1,6 +1,7 @@
 package PackageForDiary;
 
 import javax.swing.*;
+import java.util.Scanner;
 
 public class DiarryMain {
 
@@ -37,6 +38,7 @@ public class DiarryMain {
     private static void createEntry() {
         String title = collectStringInput("Enter title");
         String body = collectStringInput("Enter body");
+
 
         Entry entry = diarry.createEntry(title, body);
         entry.setTitle(title);

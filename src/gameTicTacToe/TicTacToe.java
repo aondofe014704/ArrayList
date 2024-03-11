@@ -1,22 +1,21 @@
 package gameTicTacToe;
 
 public class TicTacToe {
-    private int noOfPlayers = 2;
 
-    private String[][] boardElements = new String[3][3];
-    public TicTacToe(){
-        for(int index = 0; index < boardElements.length; index++){
-            for(int count = 0; count < boardElements.length; count++){
-                boardElements[index][count] = "EMPTY";
-            }
+
+
+    private final TicTacToeEnums[][] board;
+    public TicTacToe(TicTacToeEnums[][] board) {
+        this.board = board;
+    }
+
+    public void board() {
+        System.out.println("-------------");
+        for(int index = 0; index < 3; index++){
+            System.out.println("| ");
+            for(int count = 0; count < 3; count++)
+                System.out.print(board[index][count] + " | ");
+
         }
-
-    }
-    public int twoPlayers(int players) {
-        return noOfPlayers;
-    }
-
-    public void playersMovement() {
-        
     }
 }

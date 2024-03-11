@@ -19,7 +19,7 @@ public class DispatchRiders {
 
     public static void main(String[] args) {
         try {
-            System.out.println(DispatchRiders.percentageCalculator(-60));
+            System.out.println(DispatchRiders.percentageCalculator(90));
         }catch (IllegalArgumentException exception){
             System.out.println(exception.getMessage());
         }
